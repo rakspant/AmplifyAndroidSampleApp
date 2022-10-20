@@ -1,6 +1,7 @@
 package com.example.amplifysampleapp;
 
 import android.util.Log;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.amplifyframework.AmplifyException;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             Amplify.addPlugin(new AWSDataStorePlugin());
             Amplify.configure(getApplicationContext());
-
+            Toast.makeText(this,"Welcome",Toast.LENGTH_LONG).show();
             Log.i("Tutorial", "Initialized Amplify");
         } catch (AmplifyException e) {
             Log.e("Tutorial", "Could not initialize Amplify", e);
