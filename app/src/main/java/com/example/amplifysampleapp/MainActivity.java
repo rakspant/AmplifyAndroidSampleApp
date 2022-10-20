@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
             Amplify.configure(getApplicationContext());
             Toast.makeText(this,"Welcome",Toast.LENGTH_LONG).show();
             Log.i("Tutorial", "Initialized Amplify");
+            Log.i("Tutorial 2", "Initialized Amplify");
         } catch (AmplifyException e) {
             Log.e("Tutorial", "Could not initialize Amplify", e);
         }
